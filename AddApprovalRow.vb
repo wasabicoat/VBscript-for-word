@@ -70,8 +70,8 @@ Sub AddApprovalRowToTables()
             
             ' Column 3: Formal Space for Signature and Date
             newRow.Cells(3).VerticalAlignment = wdCellAlignVerticalCenter
-            newRow.Cells(3).Range.Text = "Signature: __________________________" & vbCrLf & vbCrLf & "Date: _______/_______/_______"
-            newRow.Cells(3).Range.ParagraphFormat.Alignment = wdAlignParagraphLeft
+            newRow.Cells(3).Range.Text = vbCrLf & "Signature: __________________________"  & vbCrLf & "Date: _______/_______/_______"
+            newRow.Cells(3).Range.ParagraphFormat.Alignment = wdCellAlignVerticalCenter
             newRow.Cells(3).Range.ParagraphFormat.LeftIndent = Application.CentimetersToPoints(0.5)
             
             On Error GoTo 0
